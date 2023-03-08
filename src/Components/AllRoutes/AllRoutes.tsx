@@ -19,9 +19,7 @@ const AllRoutes = () => {
             element:<Register/>
         }
     ])
-  return (
-    <div>AllRoutes</div>
-  )
+  return element;
 }
 
 export default AllRoutes

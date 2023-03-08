@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../Header/Header'
 
 const HomeScreen = () => {
   return (
-    <div>HomeScreen</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 
