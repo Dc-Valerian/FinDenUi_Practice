@@ -5,6 +5,14 @@ import logo from "../Assets/logo1.png"
 import GlobalButton from '../Global/GlobalButton'
 
 const Header = () => {
+  const [toggle,setToggle] = React.useState(false)
+
+  const showNav = ()=>{
+    setToggle(!toggle)
+  }
+  const removeNav =()=>{
+    setToggle(false)
+  }
   return (
     <div>
         <Container>
