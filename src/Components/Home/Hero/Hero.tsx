@@ -11,22 +11,27 @@ const Hero = () => {
       <Container>
         <Wrapper>
           <First>
-            Online Banking In A <br />
+           <Title>
+           Online Banking In A <br />
             Way That Is 
+            <br />
             <span>
               SuperCharged
             </span>
+           </Title>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem molestiae officiis velit nisi! Quis animi dolores ducimus non adipisci temporibus pariatur voluptatibus cum repellendus est.
             </p>
 
-            <GlobalButton name='Start Now' bcc='#644FF6' border='none' />
-            <GlobalButton name='Learn More' bcc="blue" border='1px solid white'/>          
+         <Button>
+         <GlobalButton name='Start Now' bcc='#644FF6' border='none' />
+            <GlobalButton name='Learn More' bcc="blue" border='1px solid white'/>    
+         </Button>      
           </First>
           <Second>
-            <Img/>
-            <Img/>
-            <Img/>
+            <One src={img1}/>
+            <Two/>
+            <Three/>
           </Second>
         </Wrapper>
       </Container>
@@ -36,15 +41,50 @@ const Hero = () => {
 
 export default Hero
 
-const Img = styled.img``
+const Button = styled.div`
+display: flex;
+`
+
+const Three = styled.img``
+
+const Two = styled.img``
+
+const One = styled.img``
 
 const Second = styled.div``
 
-const First = styled.div``
+const Title = styled.div`
+font-size: 40px;
+line-height: 60px;
+color: white;
+font-weight: bold;
 
-const Wrapper = styled.div``
+span{
+  color: #644FF6;
+  font-weight: bold;
+}
+`
+
+const First = styled.div`
+display: flex;
+flex-direction: column;
+`
+
+const Wrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+width: 90%;
+background-color: yellowgreen;
+margin-top: 10px;
+`
 
 const Container = styled.div`
 width: 100%;
-
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #030614;
+height: 100vh;
+/* margin-top: -50px; */
 `

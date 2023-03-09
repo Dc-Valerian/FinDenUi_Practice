@@ -1,13 +1,15 @@
 import React from 'react'
 import GlobalButton from '../Global/GlobalButton'
-import Header from '../Header/Header'
 import Footer from '../Home/Footer/Footer'
 import Hero from '../Home/Hero/Hero'
+import Header from '../Header/Header'
+
 
 const HomeScreen = () => {
   return (
     <div>
-        <Header/>
+      <Header/>
+      <br />
         <Hero/>
         <Footer/>
     </div>
