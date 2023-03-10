@@ -171,7 +171,7 @@ object-fit: cover;
 
 const Wrapper = styled.div`
 display: flex;
-width: 80%;
+width: 95%;
 height: 100%;
 /* background-color: green; */
 align-items: center;
@@ -190,7 +190,7 @@ justify-content: center;
 margin-bottom: 100px;
 position: fixed;
 top: 0; 
-z-index: 1;
+z-index:999;
 /* @media screen and (max-width:500px) {
   display: block;
 } */
