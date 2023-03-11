@@ -37,8 +37,8 @@ const Header = () => {
                 </NavHold>       
 
               <Button>
-              <GlobalButton name='Get Started' bcc="#644FF6" border='none'/>         
-                <GlobalButton name='Sign Up' bcc="transparent" border='1px solid white'/>          
+              <GlobalButton name='Get Started' bcc="#644FF6" border='none' cl='white'/>         
+                <GlobalButton name='Sign Up' bcc="transparent" border='1px solid white' cl='white'/>          
               </Button> 
 
               {

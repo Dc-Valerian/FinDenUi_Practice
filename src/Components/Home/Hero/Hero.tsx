@@ -26,8 +26,8 @@ const Hero = () => {
             </Text>
 
          <Button>
-         <GlobalButton name='Start Now' bcc='#644FF6' border='none' />
-            <GlobalButton name='Learn More' bcc="transparent" border='1px solid white'/>    
+         <GlobalButton name='Start Now' bcc='#644FF6' border='none' cl='white' />
+            <GlobalButton name='Learn More' bcc="transparent" border='1px solid white' cl='white'/>    
          </Button>      
       <Line>
       <p>

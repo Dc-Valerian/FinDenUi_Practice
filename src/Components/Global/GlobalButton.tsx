@@ -5,13 +5,14 @@ interface props{
     name:string
     bcc:string
     border:string
+    cl:string
 }
 
 
-const GlobalButton:React.FC<props> = ({name,bcc,border}) => {
+const GlobalButton:React.FC<props> = ({name,bcc,border,cl}) => {
   return (
     <div>
-        <Button bcc={bcc} border={border}>
+        <Button bcc={bcc} border={border} cl={cl}>
             {name}
         </Button>
     </div>
@@ -20,7 +21,7 @@ const GlobalButton:React.FC<props> = ({name,bcc,border}) => {
 
 export default GlobalButton
 
-const Button = styled.button<{bcc:string;border:string}>`
+const Button = styled.button<{bcc:string;border:string; cl:string}>`
 background-color: ${(props)=>props.bcc};
 height: 45px;
 margin-top: 10px;
@@ -29,8 +30,8 @@ cursor: pointer;
 font-weight: bold;
 font-size: 15px;
 margin: 5px;
-color: white;
-outline: none;
+color:${(props)=>props.cl};
+outline:none;
 border:${(props)=>props.border};
 border-radius: 30px;
 transition: all 350ms;
