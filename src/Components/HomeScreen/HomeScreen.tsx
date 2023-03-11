@@ -3,6 +3,7 @@ import GlobalButton from '../Global/GlobalButton'
 import Footer from '../Home/Footer/Footer'
 import Hero from '../Home/Hero/Hero'
 import Header from '../Header/Header'
+import Online from '../Home/Online/Online'
 
 
 const HomeScreen = () => {
@@ -11,6 +12,7 @@ const HomeScreen = () => {
       <Header/>
       <br />
         <Hero/>
+        <Online/>
         <Footer/>
     </div>
   )

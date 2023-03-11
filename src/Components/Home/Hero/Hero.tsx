@@ -21,14 +21,22 @@ const Hero = () => {
               SuperCharged
             </span>
            </Title>
-            <p>
+            <Text>
               Lorem ipsum dolor, animi dolores ducimus non adipisci temporibus pariatur voluptatibus cum repellendus est.
-            </p>
+            </Text>
 
          <Button>
          <GlobalButton name='Start Now' bcc='#644FF6' border='none' />
             <GlobalButton name='Learn More' bcc="transparent" border='1px solid white'/>    
          </Button>      
+      <Line>
+      <p>
+         50% Off For Your Brand New Account In Finden {" "}
+         <span>
+         Sign Up Today
+         </span>
+         </p>
+      </Line>
           </First>
           <Second>
             <One src={img1}/>
@@ -51,14 +59,28 @@ const Hero = () => {
 }
 
 export default Hero
+const Line = styled.div`
+span{
+  color: #644FF6;
+  font-size: 17px;
+}
+p{
+  font-size: 14px;
+}
+`
 
 const Button = styled.div`
 display: flex;
+
+@media screen and (max-width: 500px) {
+  flex-wrap: wrap;
+}
 `
 const Icon = styled.div`
-margin-top: 10px;
-font-size: 30px;
+margin-top: 15px;
+font-size:30px;
 color: white;
+margin: 0;
 
 `
 const Four = styled.div`
@@ -79,9 +101,10 @@ p{
   color: white;
 }
 
-h5  {
+h5{
   margin: 10px;
   color: white;
+  font-size: 15px;
 }
 `
 
@@ -125,23 +148,41 @@ justify-content: center;
 `
 
 const Title = styled.div`
-font-size: 3.1em;
+font-size: 2.8em;
 line-height: 60px;
 color: white;
 font-weight: 610;
 
+@media screen and (max-width: 500px) {
+  font-size: 200%;
+  line-height: 40px;
+  font-weight: 800;
+}
+
 span{
   color: #723EE0;
+  line-height: 60px;
   font-weight: bold;
 }
 p{
   color: white;
+
+ 
 }
+`
+const Text = styled.div`
+color: white;
+line-height: 30px;
+@media screen and (max-width: 500px) {
+    font-size: 13px;
+  }
 `
 
 const First = styled.div`
 display: flex;
 flex-direction: column;
+
+
 
 p{
   color: white;

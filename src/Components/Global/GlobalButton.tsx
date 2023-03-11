@@ -38,4 +38,8 @@ transition: all 350ms;
 :hover{
   transform: scale(0.98);
 }
+
+@media screen and (max-width:500px) {
+  width: 290px;
+}
 `
