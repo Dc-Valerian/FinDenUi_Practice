@@ -184,7 +184,7 @@ const Container = styled.div`
 display: flex;
 background-color: #030614;
 width: 100%;
-height: 60px;
+height: 80px;
 align-items: center;
 justify-content: center;
 margin-bottom: 100px;

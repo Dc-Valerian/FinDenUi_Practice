@@ -40,7 +40,7 @@ const Online = () => {
                  </span>
                  </Sub>
                 </Second>
-                
+
             </Wrapper>
         </Container>
     </div>
@@ -49,6 +49,7 @@ const Online = () => {
 
 export default Online
 const Sub = styled.div`
+color: white;
  span{
     font-size: 18px;
     color:#644FF6 ;
@@ -113,7 +114,7 @@ margin-top: 30px;
 `
 
 const Wrapper = styled.div`
-background-color: aquamarine;
+/* background-color: aquamarine; */
 width: 90%;
 display: flex;
 justify-content: center;
@@ -122,7 +123,7 @@ align-items: center;
 `
 
 const Container = styled.div`
-background-color: red;
+/* background-color: red; */
 width: 100%;
 display: flex;
 justify-content: center;
