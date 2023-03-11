@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import line from "../../Assets/line.png"
+import Card from './Card'
+import icon from "../../Assets/icon.png"
+import nice from "../../Assets/nice2.png"
+
 
 const Story = () => {
   return (
@@ -18,9 +22,15 @@ const Story = () => {
                      even for children. The product is certified in 50 countries.</Sub>
                 </First>
                 <Second>
-                    <Third>Third</Third>
-                    <Pic/>
-                    <Fourth>Five</Fourth>
+                    <Third>
+                      <Card title='No Preservatives' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                      <Card title='No Preservatives' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                      <Card title='No Preservatives' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                    </Third>
+                    <Pic src={nice}/>
+                    <Fourth>
+                      
+                    </Fourth>
                 </Second>
             </Wrapper>
         </Container>
