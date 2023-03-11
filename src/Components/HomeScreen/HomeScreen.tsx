@@ -5,6 +5,7 @@ import Hero from '../Home/Hero/Hero'
 import Header from '../Header/Header'
 import Online from '../Home/Online/Online'
 import Chart from '../Home/Chart/Chart'
+import Story from '../Home/Story/Story'
 
 
 const HomeScreen = () => {
@@ -15,6 +16,7 @@ const HomeScreen = () => {
         <Hero/>
         <Online/>
         <Chart/>
+        <Story/>
         <Footer/>
     </div>
   )
