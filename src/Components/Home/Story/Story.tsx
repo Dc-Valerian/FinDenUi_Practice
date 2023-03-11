@@ -3,7 +3,12 @@ import styled from 'styled-components'
 import line from "../../Assets/line.png"
 import Card from './Card'
 import icon from "../../Assets/icon.png"
+import icon1 from "../../Assets/icon2.png"
+import icon3 from "../../Assets/icon05.png"
+import icon4 from "../../Assets/icon06.png"
+import icon5 from "../../Assets/icon3.png"
 import nice from "../../Assets/nice2.png"
+import line1 from "../../Assets/line1.png"
 
 
 const Story = () => {
@@ -24,13 +29,15 @@ const Story = () => {
                 <Second>
                     <Third>
                       <Card title='No Preservatives' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
-                      <Card title='No Preservatives' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
-                      <Card title='No Preservatives' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                      <Card title='Add Micro Mineral' img={icon1} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                      <Card title='Natural Quantity' img={icon3} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
                     </Third>
                     <Pic src={nice}/>
-                    <Fourth>
-                      
-                    </Fourth>
+                    <Third>
+                    <Card title='Antioxodant' img={icon4} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                    <Card title='All Vitamins' img={icon5} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                    <Card title='Taste Like Home' img={icon} sub='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, fugit!'/>
+                    </Third>
                 </Second>
             </Wrapper>
         </Container>
@@ -40,15 +47,22 @@ const Story = () => {
 
 export default Story
 
-const Fourth = styled.div``
 
-const Third = styled.div``
+const Third = styled.div`
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: 50px;
+margin-right: 40px;
+margin-left: 40px;
+`
 
 const Pic = styled.img``
 
 const Second = styled.div`
 display: flex;
 justify-content: space-between;
+margin-top: 40px;
 `
 
 const Sub = styled.div`
@@ -80,13 +94,15 @@ align-items: center;
 flex-direction: column;
 `
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+`
 
 const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: aliceblue;
+/* background-color: aliceblue; */
+/* background-image: url(${line1}); */
 margin-top: 70px;
 margin-bottom: 30px;
 `

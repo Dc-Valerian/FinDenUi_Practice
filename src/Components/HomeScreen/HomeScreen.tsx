@@ -6,6 +6,7 @@ import Header from '../Header/Header'
 import Online from '../Home/Online/Online'
 import Chart from '../Home/Chart/Chart'
 import Story from '../Home/Story/Story'
+import Deliver from '../Home/Deliver/Deliver'
 
 
 const HomeScreen = () => {
@@ -17,6 +18,7 @@ const HomeScreen = () => {
         <Online/>
         <Chart/>
         <Story/>
+        <Deliver/>
         <Footer/>
     </div>
   )
