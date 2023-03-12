@@ -50,6 +50,7 @@ export default Story
 
 const Third = styled.div`
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 flex-direction: column;
 margin-top: 50px;
@@ -61,6 +62,7 @@ const Pic = styled.img``
 
 const Second = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 margin-top: 40px;
 `
