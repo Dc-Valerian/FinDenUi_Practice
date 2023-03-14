@@ -174,12 +174,11 @@ const Handbuggermenu = styled.div`
   @media screen and (min-width: 300px) and (max-width: 500px) {
     display: block;
     height: 500px;
-    margin-top: 30px;
+    margin-top: 5px;
   }
   @media screen and (max-width: 768px) {
     display: block;
     height: 100vh;
-    margin-top: 30px;
   }
 `
 

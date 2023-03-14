@@ -8,6 +8,7 @@ import bg from "../../Assets/line3.png"
 import {CgProfile} from "react-icons/cg"
 import img from "../../Assets/robot-hand.png"
 import img1 from "../../Assets/water3-rmbg.png"
+import pic from "../../Assets/nice3rm.png"
 
 const Hero = () => {
   return (
@@ -39,10 +40,10 @@ const Hero = () => {
       </Line>
           </First>
           <Second>
-        
-            <Img1 src={img1}/>
+            <Pic src={pic} />
+            {/* <Img1 src={img1}/> */}
             {/* <Imag> */}
-            <Img src={img} />
+            {/* <Img src={img} /> */}
             {/* </Imag> */}
           </Second>
         </Wrapper>
@@ -52,6 +53,19 @@ const Hero = () => {
 }
 
 export default Hero
+const Pic = styled.img`
+height: 600px;
+width: 600px;
+object-fit: cover;
+
+@media screen and (max-width: 500px) {
+  height: 350px;
+  width: 290px;
+  object-fit: contain;
+  margin-bottom: 200px;
+}
+`
+
 const Imag = styled.div`
   background-color: red;
   height:400px;
@@ -121,6 +135,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
 }
+
 `
 
 const Line = styled.div`
@@ -269,6 +284,12 @@ margin: 0;
 
   
 }
+@media screen and (max-width: 768px) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 `
 
 const Container = styled.div`
@@ -281,12 +302,16 @@ background-color: #030614;
 background-image: url(${bg});
 margin: 0;
 height: fit-content;
-padding-bottom: 20px;
-padding-top: 100px;
+padding-bottom: 50px;
+padding-top: 80px;
 /* margin-top: 50px; */
 @media screen and (max-width: 500px) {
 padding-top: 100px;
   
 }
+/* @media screen and (max-width: 1024) {
+padding-top: 100px;
+  
+} */
 
 `
