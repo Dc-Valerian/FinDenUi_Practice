@@ -41,6 +41,8 @@ transition: all 350ms;
 }
 
 @media screen and (max-width:500px) {
-  width: 290px;
+  width:250px;
+  /* display: flex;
+  align-items: center; */
 }
 `

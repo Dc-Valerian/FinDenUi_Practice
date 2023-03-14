@@ -14,12 +14,14 @@ const HomeScreen = () => {
     <div>
       <Header/>
       <br />
+      <br />
         <Hero/>
-        <Online/>
-        <Chart/>
-        <Story/>
-        <Deliver/>
-        <Footer/>
+        
+        {/* <Online/> */}
+        {/* <Chart/> */}
+        {/* <Story/> */}
+        {/* <Deliver/> */}
+        {/* <Footer/> */}
     </div>
   )
 }

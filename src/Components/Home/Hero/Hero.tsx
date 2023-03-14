@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import GlobalButton from '../../Global/GlobalButton'
-import img1 from "../../Assets/hero1.png"
+// import img1 from "../../Assets/hero1.png"
 import img2 from "../../Assets/hero2.png"
 import img3 from "../../Assets/hero3.png"
 import bg from "../../Assets/line3.png"
 import {CgProfile} from "react-icons/cg"
+import img from "../../Assets/robot-hand.png"
+import img1 from "../../Assets/water3-rmbg.png"
 
 const Hero = () => {
   return (
@@ -14,15 +16,13 @@ const Hero = () => {
         <Wrapper>
           <First>
            <Title>
-           Online Banking In A <br />
-            Way That Is 
-            <br />
-            <span>
-              SuperCharged
-            </span>
+           Water is a precious and fiinite resource that sustains life on Earth<br />
+            
            </Title>
             <Text>
-              Lorem ipsum dolor, animi dolores ducimus non adipisci temporibus pariatur voluptatibus cum repellendus est.
+            Water is the essential building block of life. <br />
+             But it is more than just essential to quench thirst or protect health; <br />
+              water is vital for creating jobs and supporting economic, social, and human development
             </Text>
 
          <Button>
@@ -39,18 +39,11 @@ const Hero = () => {
       </Line>
           </First>
           <Second>
-            <One src={img1}/>
-            <Two src={img2}/>
-            <Three src={img3}/>
-            <Four>
-              <Icon>
-                <CgProfile/>
-              </Icon>
-            <h5>
-            + 45 M
-            </h5>
-              <p>Users Globally</p>
-            </Four>
+        
+            <Img1 src={img1}/>
+            {/* <Imag> */}
+            <Img src={img} />
+            {/* </Imag> */}
           </Second>
         </Wrapper>
       </Container>
@@ -59,6 +52,77 @@ const Hero = () => {
 }
 
 export default Hero
+const Imag = styled.div`
+  background-color: red;
+  height:400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+
+`
+const Img = styled.img`
+/* background-color: blue; */
+height: 800px;
+width: 800px;
+object-fit: contain;
+margin-top: 50%;
+bottom: -150px;
+left: -300px;
+position: absolute;
+
+@media screen and (max-width: 500px) {
+  left: -300px;
+  bottom: 0;
+  height: 550px;
+  width: 550px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+`
+
+const Img1 = styled.img`
+/* background-color: red; */
+height: 50%;
+width: 50%;
+z-index: 9999;
+object-fit: cover;
+left: -60px;
+bottom: 100px;
+position: relative;
+
+@media screen and (max-width: 500px) {
+  left: -30px;
+  bottom: 120px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+`
+
+const Second = styled.div`
+height: 500px;
+width: 90%;
+/* background-color: aliceblue; */
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+/* align-items: center; */
+justify-content: center;
+
+@media screen and (max-width: 500px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+`
+
 const Line = styled.div`
 span{
   color: #644FF6;
@@ -66,14 +130,21 @@ span{
 }
 p{
   font-size: 14px;
+
 }
 `
 
 const Button = styled.div`
 display: flex;
+margin-top: 10px;
 
 @media screen and (max-width: 500px) {
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;
+  background-color: red; */
 }
 `
 const Icon = styled.div`
@@ -136,22 +207,14 @@ z-index: 1;
 border-radius: 20px;
 `
 
-const Second = styled.div`
-height: 800px;
-width: 90%;
-/* background-color: red; */
-position: relative;
-display: flex;
-/* align-items: center; */
-justify-content: center;
 
-`
 
 const Title = styled.div`
-font-size: 2.8em;
-line-height: 60px;
+font-size: 2.0em;
+line-height: 50px;
 color: white;
-font-weight: 610;
+font-style: italic;
+font-weight:900;
 
 @media screen and (max-width: 500px) {
   font-size: 200%;
@@ -174,13 +237,16 @@ const Text = styled.div`
 color: white;
 line-height: 30px;
 @media screen and (max-width: 500px) {
-    font-size: 13px;
+    font-size: 12px;
   }
 `
 
 const First = styled.div`
 display: flex;
 flex-direction: column;
+ /* display: flex; */
+justify-content: center;
+/* align-items: center;  */
 
 
 
@@ -195,7 +261,14 @@ display: flex;
 justify-content: space-between;
 width: 90%;
 /* background-color: yellowgreen; */
-margin-top: -15%;
+/* margin-top: -15%; */
+margin: 0;
+
+@media screen and (max-width: 500px) {
+  flex-direction: column;
+
+  
+}
 `
 
 const Container = styled.div`
@@ -204,7 +277,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #030614;
+/* padding-top: 100px; */
 background-image: url(${bg});
-height: 200vh;
+margin: 0;
+height: fit-content;
+padding-bottom: 20px;
+padding-top: 100px;
 /* margin-top: 50px; */
+@media screen and (max-width: 500px) {
+padding-top: 100px;
+  
+}
+
 `
