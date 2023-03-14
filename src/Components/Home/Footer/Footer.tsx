@@ -40,7 +40,7 @@ const Footer = () => {
                         <Bold>Security and terms</Bold>
                     <Navs>Trust and Security</Navs>
                     <Navs>Privacy policy</Navs>
-                    <Navs>Terms</Navs>
+                    <Navs>Terms & Conditions</Navs>
                     </Dow>
                 </Start>
                 <Start>
