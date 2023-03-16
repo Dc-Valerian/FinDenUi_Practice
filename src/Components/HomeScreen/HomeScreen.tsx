@@ -19,8 +19,8 @@ const HomeScreen = () => {
         
         <Online/>
         <Chart/>
-        {/* <Story/> */}
-        {/* <Deliver/> */}
+        <Story/>
+        <Deliver/>
         <Footer/>
     </div>
   )
