@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import CardProps from '../Global/CardProps'
-import img from "../../Components/Assets/water2.webp"
+import img from "../../Components/Assets/icon3.svg"
+
 
 const Card = () => {
   return (
@@ -9,8 +10,8 @@ const Card = () => {
         <Container>
             <Wrapper>
                 <CardProps image={img} span='Tastes Fresh' p='The purity of our water ensures a crisp, fresh taste'/>
-                {/* <CardProps image={img} span='Tastes Fresh' p='The purity of our water ensures a crisp, fresh taste'/>
-                <CardProps image={img} span='Tastes Fresh' p='The purity of our water ensures a crisp, fresh taste'/> */}
+                <CardProps image={img} span='Tastes Fresh' p='The purity of our water ensures a crisp, fresh taste'/>
+                <CardProps image={img} span='Tastes Fresh' p='The purity of our water ensures a crisp, fresh taste'/>
             </Wrapper>
         </Container>
     </div>
@@ -46,7 +47,7 @@ width: 100%;
 height: 300px;
 /* background-color: yellowgreen; */
 margin-bottom: 30px;
-display: flex;
+/* display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-between; */
 `

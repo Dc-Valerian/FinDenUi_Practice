@@ -1,88 +1,87 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-interface props{
-    image:any;
-    span:string;
-    p:string
+interface props {
+  image: string;
+  span: string;
+  p: string;
 }
 
-const CardProps:React.FC<props> = ({image,p,span}) => {
+const Definebox: React.FC<props> = ({ span, p, image }) => {
   return (
-    <div>
-        <Container>
-            <Image src={image}/>
-            <br />
-            <span>{span}</span>
-            <p>{p}</p>
-        </Container>
-    </div>
-  )
-}
+    <Container>
+      <Image src={image} />
+      <br />
+      <span>{span}</span>
+      <p>{p}</p>
+    </Container>
+  );
+};
 
-export default CardProps
+export default Definebox;
 
 const Image = styled.img`
-/* width: 40%;
-height: 40%;
-object-fit: cover; */
-`
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: 17px;
+`;
 
 const Container = styled.div`
-flex-direction: column;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-display: flex;
-justify-content: center;
-width: 280px;
-height: 250px;
-/* background-color: #ffffff; */
-/* background-color: aliceblue; */
-border-radius: 3px;
-cursor: pointer;
-transition: all 350ms;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  height: 200px;
 
-:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    span{
-        color: #644FF6;
-    }
-}
-
-p{
-    color: #030614;
-    text-align: center;
-    font-weight: 500;
-    width: 270px;
-    font-size: 14px;
-    /* margin-left: 17px; */
-    /* text-align: center; */
-
-    @media screen and (max-width:320px) {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-
-@media screen  and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     flex-wrap: wrap;
     width: auto;
     margin-bottom: 30px;
-}
+  }
 
-@media screen and (max-width:320px) and (max-width:500px) {
+  @media screen and (min-width: 320px) and (max-width: 500px) {
     display: flex;
+    
     flex-direction: column;
     width: auto;
     margin-bottom: 30px;
     height: auto;
-}
-
-span{
+  }
+  background-color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+  span {
+    margin-left: 17px;
     font-weight: 600;
+
     font-size: 17px;
+  }
+  transition: all 360ms;
+
+  :hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    span {
+      color: rgb(2, 101, 210);
+    }
+  }
+
+  p {
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: 500;
+    width: 270px;
+    font-size: 14px;
+    margin-left: 17px;
     display: flex;
-    margin-top: -20px;
     align-items: center;
     justify-content: center;
-}
-`
+    text-align: center;
+
+    @media screen and (max-width: 320px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+`;
