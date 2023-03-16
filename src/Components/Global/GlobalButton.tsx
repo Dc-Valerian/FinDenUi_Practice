@@ -45,4 +45,12 @@ transition: all 350ms;
   /* display: flex;
   align-items: center; */
 }
+@media screen and (max-width:768px) {
+  width:200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: flex;
+  align-items: center; */
+}
 `
