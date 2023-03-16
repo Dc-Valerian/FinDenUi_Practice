@@ -1,13 +1,13 @@
-import React from 'react'
+// import React from 'react'
 import styled from 'styled-components'
 import GlobalButton from '../../Global/GlobalButton'
 // import img1 from "../../Assets/hero1.png"
-import img2 from "../../Assets/hero2.png"
-import img3 from "../../Assets/hero3.png"
+// import img2 from "../../Assets/hero2.png"
+// import img3 from "../../Assets/hero3.png"
 import bg from "../../Assets/line3.png"
 import {CgProfile} from "react-icons/cg"
-import img from "../../Assets/robot-hand.png"
-import img1 from "../../Assets/water3-rmbg.png"
+// import img from "../../Assets/robot-hand.png"
+// import img1 from "../../Assets/water3-rmbg.png"
 import pic from "../../Assets/nice3rm.png"
 
 const Hero = () => {
