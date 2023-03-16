@@ -5,7 +5,9 @@ import AllRoutes from './Components/AllRoutes/AllRoutes';
 
 function App() {
   return (
-    <div>
+    <div 
+    // style={{overflowX:'hidden'}}
+    >
       
       <AllRoutes/>
     </div>
