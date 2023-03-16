@@ -58,20 +58,35 @@ margin-right: 40px;
 margin-left: 40px;
 `
 
-const Pic = styled.img``
+const Pic = styled.img`
+ @media screen and (max-width: 500px) {
+  display: none;
+}
+`
 
 const Second = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 margin-top: 40px;
+
+@media screen and (max-width: 500px) {
+  margin-top:-10px;
+}
 `
 
 const Sub = styled.div`
 margin: 10px;
 text-align: center;
 color: grey;
-font-size: 13px;
+font-size: 15px;
+ @media screen and (max-width: 500px) {
+  font-size: 13px;
+  text-align: center;
+  /* padding: 5px; */
+  margin-right: 10px;
+  margin-left: 10px;
+ }
 `
 
 const Imag = styled.div`
@@ -88,6 +103,12 @@ font-weight: 800;
 font-size: 48px;
 display: flex;
 flex-direction: column;
+ 
+ @media screen and (max-width: 500px) {
+  font-weight: 800;
+  font-size: 33px;
+  text-align: center;
+ }
 `
 
 const First = styled.div`

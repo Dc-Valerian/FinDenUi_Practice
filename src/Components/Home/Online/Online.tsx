@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import GlobalButton from '../../Global/GlobalButton'
+import bg from "../../Assets/line3.png"
+
 
 const Online = () => {
   return (
     <div>
         <Container>
             <Wrapper>
-                <First>
+                {/* <First>
                     <Right>
                         <Title>
                         Get The Desktop Version      
@@ -22,23 +24,25 @@ const Online = () => {
                             500+ credit at first sign up 
                         </p>
                     </Left>
-                </First>
+                </First> */}
                 <Second>
                  <Text>
-                 Online Banking In A Way That Is {"  "}
+                 Water is a vital resource for all {"  "}
                  <span>
-                 SuperCharged
+                 living beings.
                  </span>
                  </Text>
                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quaerat harum eaque
+                 Access to safe drinking water is still a challenge for many communities around the world.
+                 <br />
+                 1.4 million people die annually and 74 million will have their lives shortened by diseases related to poor water, sanitation and hygiene.
                  </p>
-                 <Sub>
-                 50% Off For Your Brand New Account In Finden {" "}
-                 <span>
+                 {/* <Sub> */}
+               
+                 {/* <span>
                  Sign Up Today
-                 </span>
-                 </Sub>
+                 </span> */}
+                 {/* </Sub> */}
                 </Second>
 
             </Wrapper>
@@ -61,9 +65,26 @@ font-size: 35px;
 font-weight: 600;
 color: white;
 
+@media screen and (max-width: 500px) {
+    text-align: center;
+    font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 42px;
+}
+
 span{
     font-size: 39px;
     color:#644FF6 ;
+    @media screen and (max-width: 500px) {
+    /* text-align: center; */
+    font-size: 40px;
+}  
+@media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 42px;
+} 
 }
 `
 
@@ -98,7 +119,19 @@ p{
     font-size: 15px;
     color: white;
     margin: 15px;
+    text-align: center;
+
+    @media screen and (max-width: 500px) {
+        font-size: 15px;
+        margin-bottom: 180px;
+    }
+    @media screen and (max-width: 768px) {
+    /* text-align: center; */
+    font-size: 13px;
 }
+
+}
+
 `
 
 const First = styled.div`
@@ -124,10 +157,18 @@ align-items: center;
 
 const Container = styled.div`
 /* background-color: red; */
+background-color: #030614;
+/* background-image: url(${bg}); */
+height: 300px;
 width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: -38%;
-z-index: 4;
+margin-top: -5%;
+/* z-index: ; */
+
+@media screen and (max-width: 500px) {
+    bottom: 100px;
+    margin-top: -200px;
+}
 `
